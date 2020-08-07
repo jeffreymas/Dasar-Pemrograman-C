@@ -1,0 +1,39 @@
+#include <stdio.h>
+int array[4][3];
+int main()
+{
+	int x,y;
+	array[0][0] = 'a';
+	array[0][1] = 'b';
+	array[0][2] = 'c';
+	array[1][0] = 'd';
+	array[1][1] = 'e';
+	array[1][2] = 'f';
+	array[2][0] = 'g';
+	array[2][1] = 'h';
+	array[2][2] = 'i';
+	array[3][0] = 'j';
+	array[3][1] = 'k';
+	array[3][2] = 'l';
+	printf("array[%d] ",0);
+	printf("%d", array[0][0]);
+	printf("%d", array[0][1]);
+	printf("%d", array[0][2]);
+	printf("\n");
+	printf("array[%d] ",1);
+	printf("%d", array[1][0]);
+	printf("%d", array[1][1]);
+	printf("%d", array[1][2]);
+	printf("\n");
+	printf("array[%d] ",2);
+	printf("%d", array[2][0]);
+	printf("%d", array[2][1]);
+	printf("%d", array[2][2]);
+	printf("\n");
+	printf("array[%d] ",3);
+	printf("%d", array[3][0]);
+	printf("%d", array[3][1]);
+	printf("%d", array[3][2]);
+	printf("\n");
+	return(0);
+}
