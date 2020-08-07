@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+/*---Kamus Global---*/
+typedef struct {
+	int X, Y;
+} PTitik;
+
+int NilX, NilY ;
+PTitik NilaiTitik;
+
+/*---Deklarasi Fungsi---*/
+PTitik CreateTitik(int x1, int x2)
+{
+	/*Kamus Lokal :*/
+	PTitik Hsl;
+	/*Algoritma :*/
+	Hsl.X = x1; Hsl.Y=x2;
+	return Hsl;
+}
+PTitik TambahTitik(PTitik Titik1, PTitik Titik2)
+{
+	PTitik jml;
+	jml.X = Titik1.X + Titik2.X;
+	jml.Y = Titik1.Y + Titik2.Y;
+	return jml;
+}
+main()
+{
+	printf("Masukkan Nilai x dan y Sembarang, lalu Enter\n");
+	scanf("%d %d", &NilX, &NilY);
+	printf("Sebelum pemanggilan fungsi CreateTitik : \n");
+	printf("Nilai Absis = %d, Nilai Ordinat = %d\n", NilaiTitik.X, NilaiTitik.Y);
+	NilaiTitik = CreateTitik(NilX, NilY);
+	printf("Setelah pemanggilan fungsi CreateTitik : \n");
+	printf("Nilai Absis = %d, Nilai Ordinat = %d\n", NilaiTitik.X, NilaiTitik.Y);
+	NilaiTitik = TambahTitik(NilaiTitik, NilaiTitik);
+	printf("Setelah pemanggilan fungsi TambahTitik : \n");
+	printf("Nilai Absis = %d, Nilai Ordinat = %d\n", NilaiTitik.X, NilaiTitik.Y);
+	
+}
