@@ -1,0 +1,23 @@
+/* Nama file : anakayam.cpp
+Deskripsi : Menuliskan lagu anak ayam */
+#include <stdio.h>
+int main()
+{ /* Kamus */
+	int n;
+	/* Algoritma */
+	do{
+		printf("Masukkan nilai N > 0 : ");
+		scanf("%d",&n);
+	}while (n <= 0);
+	do{
+		printf("\nAnak Ayam Turun %d \n",n);
+		if (n==1)
+		{break;}
+		else
+		{
+			n = n-1;
+			printf("Mati satu tinggal %d \n",n);
+		}
+	}while (n>0);
+	printf("Mati satu tinggal induknya\n");
+}

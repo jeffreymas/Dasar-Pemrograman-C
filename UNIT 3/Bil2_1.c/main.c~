@@ -1,0 +1,15 @@
+#include <stdio.h>
+main()
+{
+	int baris, kolom, hasil_tambah;
+	for (baris = 1; baris <= 5; baris++)
+	{
+	for (kolom = 1; kolom <= 5; kolom++)
+		{
+	hasil_tambah = baris + kolom;
+		printf(" %2d", hasil_tambah);
+	}
+printf ("\n \n");
+}
+return(0);
+}
